@@ -1,4 +1,4 @@
-Getiing started with dockerizing Wordpress:
+Getting started with dockerizing Wordpress:
 1. First step would be installing Docker and Docker-Compose on your System. You can install Docker in various ways, but I will share my installation in the command below:
 - sudo apt update
 - sudo apt install apt-transport-https ca-certificates curl software-properties-common
@@ -13,3 +13,12 @@ If it shows the status is active then Docker is running on your system, so you c
 - docker-compose --version
 If you can see a version as an Output, then You're all set.
 
+2. Second step is "Setiing up your docker-compose.yml" file
+- mkdir wordpress-docker
+- cd wordpress-docker
+Create the docker-compose.yml file with any text editor you work always with, and copy paste the docker-compose file in this repository (Case-sensitive).
+Then run the code below:
+- docker-compose up -d
+Hooray! You have done the job!
+Test the result with openning a browser and searching for this address:
+http://localhost:8080
